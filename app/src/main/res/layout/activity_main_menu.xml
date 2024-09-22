@@ -7,6 +7,27 @@
     android:layout_height="match_parent"
     tools:context=".MainMenuActivity">
 
+
+    <LinearLayout
+        android:id="@+id/llMn4"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_margin="20dp"
+        android:background="#BC0303"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/llMn3">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fitur Catatan"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
     <LinearLayout
         android:id="@+id/llMn1"
         android:layout_width="match_parent"
