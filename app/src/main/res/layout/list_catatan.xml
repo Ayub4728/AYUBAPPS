@@ -11,7 +11,7 @@
 
 
     <TextView
-        android:id="@+id/nama_pemain"
+        android:id="@+id/tv_judul"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Judul Catatan"
@@ -19,16 +19,25 @@
         android:textColor="#E61C1C"
         android:textSize="20dp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/tv_tanggal"
+        app:layout_constraintBottom_toTopOf="@+id/tv_detail"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/tv_tanggal"
+        android:id="@+id/tv_detail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
-        android:text="22/9/24"
+        android:text="Detail"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_delete"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

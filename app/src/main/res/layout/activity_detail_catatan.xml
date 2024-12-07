@@ -5,7 +5,8 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CatatanActivity">
+    tools:context=".DetailCatatanActivity">
+
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout2"
@@ -28,7 +29,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
-            android:text="Catatan"
+            android:text="Detail Catatan"
             android:textColor="#BC0303"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toEndOf="@+id/imageView4"
@@ -36,20 +37,21 @@
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rv_Catatan"
+
+    <EditText
+        android:id="@+id/ed_Judul"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        tools:listitem="@layout/list_catatan"
-        app:layout_constraintTop_toBottomOf="@+id/constraintLayout2" />
+        android:layout_marginTop="10dp"
+        android:hint="Judul"
+        app:layout_constraintTop_toBottomOf="@id/constraintLayout2"/>
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/bt_add"
-        android:layout_width="wrap_content"
+
+    <EditText
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="20dp"
-        android:src="@drawable/ic_add"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        android:inputType="textMultiLine"
+        app:layout_constraintTop_toBottomOf="@id/ed_Judul"
+        android:hint="Silakan Tulis Catatan Anda"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

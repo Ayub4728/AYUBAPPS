@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".ProfileActivity">
+
+
+
+    <TextView
+        android:id="@+id/tv_hello"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:textColor="#F6F4F4"
+        android:text="hello,My Name Is"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="10dp"
+        app:layout_goneMarginEnd="5dp"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textColor="#F6F4F4"
+        android:text="DASTANA AYUB PETHIT"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_hello"/>
+
+    <TextView
+        android:id="@+id/tv_school"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:textColor="#F6F4F4"
+        android:text="Iam A Student From Permata Sunnah"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_name"/>
+
+    <TextView
+        android:id="@+id/tv_abtm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ABOUT ME"
+        android:textColor="#F6F4F4"
+        android:textSize="30dp"
+        android:layout_marginTop="35dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_school" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_abtm">
+
+        <TextView
+            android:id="@+id/tv_elemen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Elementary"
+            android:textColor="#F6F4F4"
+            android:textSize="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_abtm" />
+
+        <TextView
+            android:id="@+id/tv_stdnt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:text="Student"
+            android:textColor="#F40909"
+            android:textSize="15dp"
+            app:layout_constraintStart_toEndOf="@+id/tv_elemen"
+            app:layout_constraintTop_toBottomOf="@+id/tv_abtm" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="I'm Ayub. My home is in Indonesia, in the province of East Java, Sidoarjo City, Gedangan Puri Surya Jaya District. I was born in 2013, April 4th, and I am a fifth grade student from the Permata Sunnah Islamic School. I like mathematics and sports. my hobby is drawing"
+        android:textColor="#F6F4F4"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -50,7 +50,7 @@
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/llmn2"
+        android:id="@+id/llMn2"
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:layout_margin="20dp"
@@ -80,7 +80,7 @@
         android:gravity="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/llmn2">
+        app:layout_constraintTop_toBottomOf="@+id/llMn2">
 
         <TextView
             android:layout_width="wrap_content"
@@ -91,6 +91,30 @@
             android:textStyle="bold" />
 
     </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/llMn5"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_margin="20dp"
+        android:background="#BC0303"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/llMn4">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Profile"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

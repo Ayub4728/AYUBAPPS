@@ -29,7 +29,7 @@ class MainMenuActivity : AppCompatActivity() {
             val intent = Intent(this@MainMenuActivity, AyubActivity::class.java)
             startActivity(intent)
         }
-        binding.llmn2.setOnClickListener {
+        binding.llMn2.setOnClickListener {
             val intent = Intent(this@MainMenuActivity, CalculatorActivity::class.java)
             startActivity(intent)
         }
@@ -37,5 +37,9 @@ class MainMenuActivity : AppCompatActivity() {
             val intent = Intent(this@MainMenuActivity, AcakActivity::class.java)
             startActivity(intent)
         }
-}
+        binding.llMn5.setOnClickListener {
+            val intent = Intent(this@MainMenuActivity, ProfileActivity::class.java)
+            startActivity(intent)
+        }
+    }
 }
